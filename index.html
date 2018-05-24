@@ -115,6 +115,7 @@
                 </li>
             </ul>
         </div>
+      </div>
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
@@ -221,11 +222,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script>
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
+    $(".menu-toggle").click(function() {
+    // e.preventDefault();
+    $("#wrapper").css("position", "static")
+    $("#wrapper").slideToggle();
+    });
+    </script>
 
   </body>
 </html>
