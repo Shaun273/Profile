@@ -29,6 +29,7 @@
     margin-left: -250px;
     overflow-y: auto;
     background: #000;
+    /* linear-gradient(90deg,rgba(15,15,15,1.0),rgba(15,15,15,0.0)); */
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -75,7 +76,7 @@
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,0.0));
 }
 
 .sidebar-nav li a:active,
@@ -97,6 +98,9 @@
     color: #fff;
     background: none;
 }
+/* .sidebar-item:hover {
+  background-color:blue, linear-gradient(90deg,rgba(125,125,125,1),rgba(125,125,125,0.0));
+} */
 
 @media(min-width:768px) {
     #wrapper {
