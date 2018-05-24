@@ -82,7 +82,7 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <div id="wrapper"> <!-- sidebar -->
+      <div id="wrapper" class="fadeInLeft"> <!-- sidebar -->
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -222,9 +222,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script>
-    $(".menu-toggle").click(function() {
-    // e.preventDefault();
-    $("#wrapper").css("position", "static")
+    $(".menu-toggle").click(function(e) {
+    e.preventDefault();
+    // $("#wrapper").css("position", "static")
     $("#wrapper").slideToggle();
     });
     </script>
