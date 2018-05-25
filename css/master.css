@@ -1,193 +1,125 @@
 * {
   /* border: red 1px solid;
   margin: 1px; */
+  font-family: Helvetica,sans-serif;
+
 }
 
-/* Globals
-
-*/
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
-/*
- * Base structure
+/* Color scheme :
+sparta redish : #F4005A
+sparta purple : #471354
+black: #11151C
+white: #FEFEFE
  */
 
-html,
-body,
-.title-div {
-/*css for full size background image*/
-  background: url(http://p1.pichost.me/i/66/1910819.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+/* Quick stylings */
+.uppercase {
+  text-transform: uppercase;
+}
+.Hover-item:hover {
+  background-color: #F4005A;
+}
+.lead {
+  font-size: 30px;
+  text-shadow: 20px;
+}
+.cover-heading {
+  font-size: 70px;
+  font-weight: 700;
+}
+/* Interactive Effects */
+
+.hover-eff-btn:hover {
+  background-color: #471354;
+  border-color: #471354;
+}
+.active-eff-btn:active {
+  background-color: #FEFEFE;
+  border-color: #FEFEFE;
+}
+.active-tab {
+  background-color: #471354;
+  border-color: #471354;
+}
+
+
+/* Sections */
+/* carousel */
+/* .testimony-img {
+  border-radius: 50%;
+} */
+
+.skill-section {
+  background: url(../images/ComputerDrawing.jpeg) no-repeat center center fixed;
   background-size: cover;
-
-  height: 100vh;
-  background-color: #060;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-
+  padding: 20px 0;;
 }
+.skill-sections {
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100vh; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+  padding-left: 80px;
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: middle;
+.skill1 {
+  padding-top: 20px;
 }
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
+.skill-sections li {
+  list-style-type: none;
   padding: 10px;
+  display: flex;
+}
+.ability-title {
+  float: left;
+  line-height: 10px;
+  padding: 5px 20px;
+}
+.ability-score {
+  float:right;
+  display: inline;
 }
 
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.logo {
+  padding: 0 5px 5px 5px;
+}
+.Logo {
+  height: 100%;
 }
 
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.95);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-.body-div {
-  padding-bottom: 70px;
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
-
-/* navbar */
-.navbar {
-  border-radius: 0;
+/* sections of main page content */
+.section-seperator {
+  /* height: ; */
+  display: block;
+  width: 100%;
+  padding: 50px 0;
+  font-size: 25px;
   margin: 0;
+
+  background: url(../images/backgrounds/natural_paper.png);
+  /* box-shadow: inset 0 0 100px rgba(0,0,0,0.5); */
 }
-.jumbotron {
-  color: white;
-  background: url(https://placeimg.com/1000/300/any);
+.section-seperator-txt {
+  color: #F4005A;
+}
+.section {
+  width: 100%;
+  padding: 0;
+
+}
 
 
+/* Contact form */
+
+.btn-send {
+  background-color: #F4005A;
+  border-color: #F4005A;
+
 }
+.contact-section {
+  background: url(../images/backgrounds/natural_paper.png);
+}
+
+
+
+
+
 .captions {
   margin-top: 5%;
 }
@@ -199,6 +131,14 @@ body,
 .thumbnail {
   padding: 5%;
 }
+/* .carousel-inner {
+  height: 60vh ;
+  padding: 200px 0;
+
+
+
+
+} */
 
 .thumbnail-text {
   text-overflow: ellipsis;
@@ -218,60 +158,41 @@ body,
   display: block;
   background: white;
 }
-body {
-   padding-top: 50px;
 
- }
+/* about page */
+
+.jumbotron {
+  /* color: white; */
+  background: url(../images/backgrounds/natural_paper.png);
 
 
+}
+.cover-container  {
+  width: 100%;
+  height: 30vh;
 
-/* Hidden side bar */
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.image-of-me {
+  width: 30%;
+  border-radius: 50%;
+  border: #fefefe 2px solid;
+  justify-content: center;
+}
+.about-para {
+  padding: 20px;
+
+}
+.form-group {
+  color: #F4005A;
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+/* carousel */
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
+/* Animations */
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@keyframes fadeintitle {
+  from{opacity: 0}
+  to{opacity: 1}
 }
